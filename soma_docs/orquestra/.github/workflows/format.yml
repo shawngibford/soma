@@ -1,0 +1,41 @@
+name: Formatting
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  black:
+    # Check if the PR is not from a fork
+    # if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      - name: code formatting
+        uses: psf/black@stable
+        with:
+          options: "--verbose"
+
+      - name: Error out if files modified
+        id: git-check
+        run: git diff-index --quiet HEAD --
+
+  isort:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+      - name: isort
+        uses: isort/isort-action@master
+        with:
+          sortPaths: .
+      - name: Error out if files modified
+        id: git-check
+        run: git diff-index --quiet HEAD --

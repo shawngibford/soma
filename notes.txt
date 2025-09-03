@@ -1,0 +1,19 @@
+protien modeling, etc 
+
+state space melds...
+
+
+Soma is now a start up. We are going to use AI agents (locally at first, but larger models on the cloud later.)
+
+We are a company that uses the most cutting edge technology (quantum computing, quantum machine learning, Agentic AI)
+to run and buiilod this company, and to search for novel drugs, both small and large molecules.
+
+First, we need to build a CEO agent that answers to me, Shawn, I am the founder, presiddent, and CEO. The CEO agent will answer to me as we mkae progress on this endeaver.
+
+All agent code will be held within agents/ and all agent_config files are in config/
+
+For prototyping, we will start with an ollama agent run locally on this machine and then we will scale up.
+
+how should we begin?
+
+tensor networks

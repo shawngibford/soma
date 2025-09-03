@@ -1,0 +1,31 @@
+# Core quantum computing and machine learning
+pennylane>=0.28.0
+pennylane-lightning>=0.28.0
+torch>=1.10.0
+numpy<2
+scipy>=1.10,<1.14
+
+# Chemistry and molecular processing
+rdkit-pypi==2023.9.5
+selfies>=2.0.0
+
+# Data processing and analysis
+pandas>=1.2.0
+matplotlib>=3.3.0
+seaborn>=0.11.0
+tqdm>=4.60.0
+
+# Optimization and hyperparameter tuning
+optuna>=2.10.0
+
+# Configuration management
+pyyaml>=6.0
+hydra-core>=1.2.0
+
+# Utilities
+click>=8.0.0
+python-dotenv>=0.19.0
+
+# Development and testing (optional)
+pytest>=7.0.0
+jupyter>=1.0.0

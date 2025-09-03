@@ -1,0 +1,36 @@
+title: "Soma - Quantum Drug Discovery"
+description: "Accelerating molecular discovery through quantum machine learning"
+url: "https://soma-quantum.github.io"
+baseurl: ""
+
+# Theme
+theme: minima
+
+# Navigation
+header_pages:
+  - index.md
+  - product.md
+  - team.md
+  - contact.md
+
+# Social links
+github_username: soma-quantum
+linkedin_username: soma-quantum
+twitter_username: SomaQuantum
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
