@@ -1,17 +1,7 @@
 title: "Soma - Personalized Medicine Research"
 description: "Advancing personalized medicine through cutting-edge computational methods"
-url: "https://soma-quantum.github.io"
-baseurl: ""
-
-# Theme
-theme: minima
-
-# Navigation
-header_pages:
-  - index.md
-  - product.md
-  - team.md
-  - contact.md
+url: "https://shawngibford.github.io"
+baseurl: "/soma"
 
 # Social links
 github_username: soma-quantum
@@ -34,3 +24,8 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+# Custom settings for GitHub Pages
+permalink: pretty
+sass:
+  style: compressed
